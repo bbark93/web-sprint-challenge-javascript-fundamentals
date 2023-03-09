@@ -102,7 +102,7 @@ const zooAnimals = [
     return zooArr.filter(animal => animal.population < 5);
   }
   
-  console.log('request 3: ',lowPopulationAnimals(zooAnimals));
+  //console.log('request 3: ',lowPopulationAnimals(zooAnimals));
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
@@ -113,10 +113,11 @@ const zooAnimals = [
   💡 NOTE: Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count. Check MDN/W3Schools for syntax!
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+  function USApop(zooArr){
+    return zooArr.reduce(function (acc, obj) { return acc + obj.population; }, 0);
   }
   
+  console.log('request 4: ',USApop(zooAnimals));
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
