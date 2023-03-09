@@ -38,7 +38,7 @@ function summation(num) {
   return sum;
   }
 
- console.log('task 2: ', summation(4));
+ //console.log('task 2: ', summation(4));
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -72,7 +72,7 @@ const zooAnimals = [
     return displayNames;
   }
 
-  console.log('topic 2, request 1: ',animalNames(zooAnimals));
+  //console.log('topic 2, request 1: ',animalNames(zooAnimals));
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -88,7 +88,7 @@ const zooAnimals = [
     return zooArr.map(name => name.animal_name.toLowerCase());
   }
   
-  console.log('request 2: ',lowerCaseNames(zooAnimals));
+  //console.log('request 2: ',lowerCaseNames(zooAnimals));
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
@@ -117,7 +117,7 @@ const zooAnimals = [
     return zooArr.reduce(function (acc, obj) { return acc + obj.population; }, 0);
   }
   
-  console.log('request 4: ',USApop(zooAnimals));
+  //console.log('request 4: ',USApop(zooAnimals));
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
@@ -187,8 +187,10 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 - Instances of CuboidMaker should initialize `length`, `width` and `height` properties
 */
 
-function CuboidMaker(/*Your Code Here */){
-  /*Your Code Here */
+function CuboidMaker(obj){
+  this.length = obj.length;
+  this.width = obj.width;
+  this.height= obj.height;
 }
 
 
