@@ -17,7 +17,7 @@ function myFunction() {
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// Even though the nested function is a different function it is enclosed within the myFunction's scope bundling them together
 
 
 
